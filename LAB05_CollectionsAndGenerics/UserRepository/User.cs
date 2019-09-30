@@ -1,10 +1,15 @@
-﻿namespace CollectionsAndGenerics
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace UserRepository
 {
-    public class User: IStorable
+    public class User
     {
-        public string Firstname;
-        public string Lastname;
-        public int Age;
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public int Age { get; set; }
+
         public string Id { get; set; }
 
         public User(string firstname, string lastname, int age, string id)
