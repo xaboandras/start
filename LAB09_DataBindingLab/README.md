@@ -44,7 +44,7 @@ Most szépítsük ki egy kicsit a tranzakciók listáját.
 Nézd meg a konverter forráskódját! A kapott bool értéktől függően két, saját magán belül tárolt SolidColorBrush közül az egyiket adja mindig vissza.
 Ellenőrizd a felhasználói felületen, hogy pozitív és negatív "Value" érték mellett a tranzakciók tényleg zölden vagy pirosan jelennek meg!
 
-- Végül vegyél fel a StackPanelbe egy Image típusú vezérlőt is. Ennek forrása (Source) a "/ViewModel/Luxury.png" legyen. Azt szeretnénk, hogy a SummaryListItemViewModel.IsLuxury propertytől függjön, hogy látható-e, vagyis az Image.Visibility ehhez legyen hozzákötve. Mivel a Visibility nem bool típusú, hanem "Windows.UI.Xaml.Visibility" (nézd meg a dokumentációba, hogy mik a lehetséges értékei), ezért készíts az IsExpense2ColorConverter-hez hasonló Bool2VisibilityConverter osztályt, ami a kapott bool értéktől függően Windows.UI.Xaml.Visibility.Visible vagy Collapsed értékeket ad vissza! Ugyanúgy regisztráld be statikus erőforrásként és használt az x:Bind konvertereként.
+- Végül vegyél fel a StackPanelbe egy Image típusú vezérlőt is. Ennek forrása (Source) a "/ViewModel/Luxury.png" legyen. Azt szeretnénk, hogy a SummaryListItemViewModel.IsLuxury propertytől függjön, hogy látható-e, vagyis az Image.Visibility ehhez legyen hozzákötve. Mivel a Visibility nem bool típusú, hanem "Windows.UI.Xaml.Visibility" (nézd meg a dokumentációban, hogy mik a lehetséges értékei), ezért készíts az IsExpense2ColorConverter-hez hasonló IsLuxury2VisibilityConverter osztályt, ami a kapott bool értéktől függően Windows.UI.Xaml.Visibility.Visible vagy Collapsed értékeket ad vissza! Ugyanúgy regisztráld be statikus erőforrásként és használt az x:Bind konvertereként.
 
 ## Value és Description mezők nullázza
 
