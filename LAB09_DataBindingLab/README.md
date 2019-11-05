@@ -13,7 +13,7 @@ A feladatokat a NewTransaction és SummaryList user contolokban kell elkészíte
 
 ## Új tranzakció (NewTransaction) felvételének implementálása
 
-A keretprogram már tartalmazza a felhasználói felület azon részét, mely új tranzakciókat hoz létre. Ami hiányzik, az az adatkötés és a nyomógomb eseménykezelője.
+A keretprogram már tartalmazza a felhasználói felület azon részét, mely új tranzakciókat hoz létre. Ami hiányzik, az a nyomógomb eseménykezelője. Ebben az alábbi adatkötéseket már ki lehet használni:
 
 - A ListBox feladata, hogy a code behindban (NewTransaction.xaml.cs) található Categories lista tartalmát megjelenítse (ItemsSource propertyhez adatkötés), és az aktuálisan kiválasztott elem sorszámát (SelectedIndex property) a NewTransaction.SelectedCategoryIndex propertybe is írja be. Ez utóbbihoz kétirányú adatkötés kell, mivel a UI nem csak megjelenít, hanem vissza is ír adatokat.
 - Ezen kívül a Description és Value feliratok utáni TextBox-ok is a NewTransaction megfelelő propertyjeibe írják be a felhasználó által megadott értékeket.
