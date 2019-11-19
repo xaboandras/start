@@ -28,39 +28,22 @@ Ebben a feladatban megint egy lehetséges hibaforrást kell megvizsgálni, ezzel
 
 A FieldCommand.Execute-ban a "vm.SelectedField = current;" helyett miért nem elég a "current.IsSelected=true;"? A megoldáshoz meg kell nézni az IsSelected propertyt, és hogy mi történik, amikor ennek értéket adunk. Lehet, hogy nem csak egy értékadás fut le, hanem valami más is...
 
-**Megoldás**
-(Azért, mert akkor a korábbi kijelölés nem törlődne. Ehhez meg kell nézni a fenti sorban a GameViewModel.SelectedField setterjét.)
-Ha nem tudja, próbálja ki!
-
 ## 4. feladat: átlós lépés
 
 A kiadott játékban van egy hiba: az eredeti szabályok szerint a szomszéd mezőre lépéskor átlósan is lehet lépni, most azonban csak lapjával szomszédos mezőre lehetséges. A feladat a hiba kijavítása. 
 
 A hiba kereséséhez annyit már tudunk, hogy amikor egy mezőre rákattintunk, a AttaxxPlus.ViewModel.FieldCommand osztály, mint ICommand aktivizálódik. Első körben ennek forráskódját érdemes tanulmányozni és a végrehajtást egy törésponttal megállítva végigkövetni, hogy mik történnek és minek mi a feltétele. Valahol itt kell lennie egy feltételnek, ami megmondja, hogy mi a szabályos lépés és mi nem.
 
-**Megoldás**
-- "Hiba" miatt csak átlósan lehet lépni (nem ugrani); Model.Operations.CloneMoveOperation.TryExecute hibás
-            // Hibás feltétel:
-            //if (Math.Abs(selectedField.Row - currentField.Row)
-            //    + Math.Abs(selectedField.Column - currentField.Column) == 1
-
-
 ## 5. feladat: boosterek listája
 
 Egy további hiba, hogy üres a boosterek listája, pedig a DummyBoosternek szerepelnie kellene rajta.
 Annyit tudunk, hogy a View/GameView.xaml user controlban szerepel a booster lista "BoosterPanel" néven. Ez adatkötéssel jeleníti meg a boosterek listáját. Valószínűleg az a hiba, hogy abba a bizonyos listába nem kerülnek bele a boosterek, amikor a program kigyűjti az elérhető boostereket.
-
-**Megoldás**
-- "Hiba": üres a Booster lista (BoosterListViewModel ctor elfelejt Boosters.Add-et hívni.
 
 ## 6. feladat: DummyBooster nem tud elfogyni
 
 A programban a DummyBooster hibásan működik! Ha a számláló szerint elfogynak a használati lehetőségek, akkor is használható marad (ami abban nyilvánul meg, hogy megnyomásakor a másik játékos következik). Javítsd ki a hibát!
 
 A megoldáshoz debuggolni kell, hogy mi is történik, amikor lefut a DummyBooster. És főleg azt, hogy miután lefutott a DummyBooster.TryExecute, utána hol folytatódik a program és ott hogyan dől el, hogy a másik játékos következik-e utána. Kezdetnek tegyél egy breakpointot a TryExecute-ba...
-
-**Megoldás**
-- Dummy booster elrontva: akkor is true-t ad vissza, ha lejárt a számláló, és a tünet így az, hogy amikor nem lehetne aktiválni, akkor is a következő játákos következik.
 
 ## 7. feladat: DummyBooster játékosonkénti számlálóval
 
