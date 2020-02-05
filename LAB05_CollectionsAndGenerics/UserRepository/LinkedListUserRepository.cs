@@ -43,6 +43,7 @@ namespace UserRepository
 
         public void Insert(User user)
         {
+            // A string.Compare segítségével keresd meg, hova kell beszúrni az új usert.
         }
     }
 }

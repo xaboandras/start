@@ -13,6 +13,8 @@ namespace UserRepository
 
         public User Get(int index)
         {
+            // Ez nem NotImplementedException, mert nem is cél, hogy megvalósítsuk!
+            //  A dictionary jellegéből adódóan nem alkalmas erre.
             throw new NotSupportedException();
         }
 

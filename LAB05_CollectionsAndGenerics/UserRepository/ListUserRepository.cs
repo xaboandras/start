@@ -13,6 +13,7 @@ namespace UserRepository
 
         public User Get(int index)
         {
+            // Tipp: használd az indexer "[]" operátort!
             return null;
         }
 

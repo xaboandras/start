@@ -10,7 +10,9 @@ A laborra való felkészülést a következő videók segítik:
 
 # A konkrét labor feladatok
 
-(E-mail érkezik az EViP Technologies vezetőségétől, a MandelbrotFavorites alkalmazásunk Product Ownerétől.)
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
+(E-mail érkezik az EViP Technologies vezetőségétől, a MandelbrotFavorites alkalmazásunk Product Ownerétől. A megolásnál figyelj rá, hogy ne a ShowFixedMandelbrot projektet indítsd el, hanem a MandelbrotFavorites-et.)
 
 Kedves Kolléga!
 

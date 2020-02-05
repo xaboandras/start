@@ -26,6 +26,8 @@ tesztelik.
 
 ## A labor elvégzésének lépései
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 - Nézd meg a projektben lévő SVG fájlok és a mellékelt PNG megfelelőik tartalmát. Milyen attribútumok
 tartalmazzák például egy téglalap szélességét és a kontúr vonalvastagságát? Az id, x, y, width, height és style
 attribútumokra szükség lesz a feladatok megoldása során.
@@ -43,7 +45,7 @@ készíthetsz.)
 minősülnek: valószínűleg arra utalak, hogy a megoldásod nem teljesen "Linq-es", ezért amikor csak lehet, került
 el őket.
 - A Linq-es kifejezések egy csomó lépést egymás után hajtanak végre, amit debuggolni elég nehéz. Debug
-célokra ideiglenesen nyugodtan vezess be változókat, a debugger az IEnumerable értékeit is össze tudja neked gyűjteni.
+célokra ideiglenesen nyugodtan vezess be változókat, de a debugger az IEnumerable értékeit is össze tudja neked gyűjteni, csak húzd rá az egeret a változóra.
 (Az IEnumerable végére ha lehet, ne tegyél .ToArray() hívást még ideiglenesen se, mert úgy marad és később igen komoly
 teljesítmény gondokat, rengeteg másolgatást okozhat. Adatbázis kapcsolat esetén pedig még több gond lehet vele.)
 - A fejlesztés során amint valami helyesen működik, a megfelelő unit teszt zölddé válik. Érdemes bekapcsolni
@@ -52,6 +54,15 @@ a Live Unit Testinget, mivel akkor nem kell mindig kézzel futtatgatni a unit te
 feladatot kis mértékben módosítani kell, hogy például egy másikkal közös metódust használjon. A cél a végleges
 kód duplikáció mentessége, vagyis néha vissza kell emiatt térni korábbi feladatokhoz és refactorálni kell
 őket. Ez ipari környezetben is így van.
+
+## Tippek, trükkök, kiegészítések a laborhoz a korábbi tapasztalatok alapján
+
+- Annak eldöntésére, hogy egy szöveg egy téglalapban van-e, érdemes egy IsInside segédmetódust készíteni, ami a text x és y pozíciójára (a szöveg bal alsó sarka az SVG formátumnál) eldönti, hogy az a téglalapon belül van-e.
+- Ezen a laboron egyre inkább előjön, hogy konzolra kiírásokkal és erős ránézéssel debuggolni egyre nehezebb. Használjátok a töréspontokat és a debuggert, mert nélküle olyan, mintha főzni akarnátok fakanál nélkül. Lehet, de nem érdemes.
+- Az extension method lényege, hogy nem csak pl. "ExtensionMethods.GetHeight(rect)"-ként lehet meghívni, hanem "rect.GetHeight()"-ként is! Ettől lesz extension method.
+- Ha valahol a double.Parse metódust használod, 2. paraméterként add meg a "CultureInfo.InvariantCulture"-t.
+Így a Windows beállításoktól függetlenül a "." lesz a tizedespont. Magyar esetén "," lenne, ami nagyon bekavarhat.
+- Ha a "rect" változó már egy konkrét téglalapra hivatkozik, akkor úgy tudom ellenőrizni, hogy a vonalvastagsága "width"-e, hogy rect.Attribute("style").Value.Contains($"stroke-width:{width}"). Először lekérem a style nevű attribútumot (érdemes belenézni az SVG fájlba, hogy minek milyen attribútumai vannak és abban milyen értékek lehetnek), aztán ennek az értéke kell, amire megvizsgáljuk, hogy szerepel-e benne egy string, amit pedig a $ kezdetű string interpolationnal írunk le, ahol behelyettesítődik a width értéke.
 
 ## A labor végére kiegészítő feladatok
 

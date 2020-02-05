@@ -17,6 +17,8 @@ A felkészülés során az alábbi anyagokat tekintsd át:
 
 # A labor feladatok
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 A labor feladat unit tesztek formájában adott. A projekt futtatható alkalmazást nem is tartalmaz, a cél a unit tesztek bezöldítése (csak a Solutions.cs fájlba dolgozz).
 
 A feladatokat a Solutions.cs fájlban szereplő sorrendben érdemes elkészíteni.

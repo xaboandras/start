@@ -21,6 +21,8 @@ Ezzel az a célunk, hogy ne lehessen véglegesen megakadni a feladat megoldásá
 
 ## A laboron
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 - A laboron végezd el ugyanezeket a módosításokat, de úgy, hogy nem másolod a forráskódot, hanem a feladatra koncentrálva írod át. (Közben természetesen lesznek olyan részek is, ami a snippetben nincs részletekbe menően kifejtve, mint például a unit teszt létrehozás. Itt lehet, hogy szükség lesz egy kis kísérletezésre vagy Google keresésre. Nyilván nem te leszel az első, aki rákeres, így hamar meg lesz a válasz.)
 - A megoldás során ne felejts el minden feladat után commitolni!
 - A snippet anyaga után a maradék időben menj tovább az alábbi feladatokkal.

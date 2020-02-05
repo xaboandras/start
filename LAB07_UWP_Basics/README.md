@@ -18,6 +18,8 @@ Az App tesztelésénél, ha fura "missing assembly" hibákat kapunk, akkor egy "
 
 ## Leírás
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 Először is hozzunk létre egy üres UWP projektet (Create a new project -> Blank App (Universal Windows)) a LAB07_UWP_Basics\\01 mappába.
 
 A "New Universal Windows Platform Project" ablakban a "Target version" maradhat, a "Minimum version": "Windows 10 Anniversary Update (10.0; Build 14393)" legyen.

@@ -4,8 +4,11 @@ Felkészülési anyagok:
 
 - A mérés előtt nézd meg a bevezető videót: https://youtu.be/vVvg6ZYT6FE
 - Az UwpBindingAndCommandDemo példaprogram működéséről még egy videó: https://youtu.be/00S42vT9ElY
+- A labor során szóba kerül a view model. Ez a később tanult MVVM architektúra egyik eleme. Lényege, hogy az adatmodellhez (például emberek egy listája) van egy view model is, ami a propertyjeinek az értékét a modelből veszi, de olyan formában, ahogy azt a nézet (view) közvetlenül meg tudja jeleníteni. Például ha a modelben van keresztnév és vezetéknév, a felhasználó felületen viszont egyben, névként jelenik majd meg, akkor a view modelnek lesz egy Name nevű propertyje, amit ha lekérdezek, a getterje a modelből elkéri a vezeték- és keresztnevet és összefűzve visszaadja őket. Így a nézet és a view model között könnyen lehet adatkötés, mivel a megjelenítendő adatok összeválogatását a view model megoldja, a view és view model közötti adatkötés a legtöbb esetben már csak átmásolgat értékeket.
 
 # DataBindingLab mérési feladatok
+
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
 
 A mérés során az alábbi feladatokat kell elkészíteni. Legalább minden feladat után commitolj.
 

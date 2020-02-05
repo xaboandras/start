@@ -15,6 +15,8 @@ A labor során egy viszonylag összetett alkalmazásban kell mozogni és módos�
 
 ## 1. feladat: a kijelölt mező keretszíne
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 Bemelegítő feladatként modosítsuk a kijelölt mező keretének színét (valami ott jól kinéző színre)!
 A mezők megjelenítését a View/GameView.xaml írja le. Itt minden mező egy nyomógomb, aminek a keretszínét (BorderBrush) egy konverteren keresztül állítjuk be annak megfelelően, hogy ki van-e választva. Ennek a konverternek kellene más színt visszaadnia, ha ki van jelölve a mező...
 

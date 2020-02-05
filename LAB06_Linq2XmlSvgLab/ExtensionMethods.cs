@@ -13,7 +13,7 @@ namespace Linq2XmlSvgLab
 
         static public double GetDoubleAttribute(this XElement self, string attributeName)
         {
-            return double.Parse(self.Attribute(attributeName).Value);
+            return double.Parse(self.Attribute(attributeName).Value, System.Globalization.CultureInfo.InvariantCulture);
         }
 
         static public double GetX(this XElement self)

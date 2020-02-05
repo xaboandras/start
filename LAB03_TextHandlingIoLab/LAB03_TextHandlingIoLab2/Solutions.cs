@@ -95,16 +95,25 @@ namespace LAB03_TextHandlingIoLab2
         #endregion
 
         #region Date
+        /// <summary>
+        /// Helper method to extract dates (as strings) from a string.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         internal string[] CollectDates(string text)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Helper method to extract the substrings of a string which look like a date.
+        /// </summary>
+        /// <param name="text">The original string</param>
+        /// <returns>IEnumerable of the "looks like a date" substrings.</returns>
         private IEnumerable<string> EnumerateDates(string text)
         {
             throw new NotImplementedException();
         }
-
         #endregion
 
     }

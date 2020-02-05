@@ -6,6 +6,8 @@ Megismerkedés a C#-ban használt főbb kollekciókkal és generikus függvénye
 
 ## Feladatok
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 A labor során két nagyobb feladatot kell megoldani. Az első különböző típusú tárolók vizsgálatával foglalkozik, a második során TDD elven kell egyszerű műveleteket implementálni. (A unit tesztek már készen vannak.)
 
 ## Első feladat
@@ -78,5 +80,4 @@ Miután megvagyunk a csomagolóval, készítsünk egy új terméket! (Ez lehet b
 
 Utolsó feladatként vizsgáljuk meg a Program.cs fájlban kikommentezett Iterate, Modify és Reassign függvényeket! Ezek a kollekciókon való iterálást, módosítást, új értékadást szemléltetik. Milyen következtetésre jutunk az új értékadás esetében?
 
-Hint:
-* foreach
+Hint: foreach

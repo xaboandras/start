@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 
 namespace Storage
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             /*Store<IStorable> myStorage = new Store<IStorable>();
 

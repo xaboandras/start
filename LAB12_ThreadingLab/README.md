@@ -32,6 +32,8 @@ A labor vége, mint határidő a commitok pusholására és a pull request bekü
 
 ## 0. feladat: a UI thread blokkolása
 
+(A labor elején, már most hozz létre egy új branchet és utána azon dolgozz, hogy a pull requestet könnyű legyen majd a labor végén létrehozni! És ha az egyetemen kezdted el a munkát, mielőtt elmész, ne felejtsd el felpusholni a változásokat a laborgépről a githubra!)
+
 A letöltött forráskód ezt már tartalmazza. Vizsgáld meg a Blocker nyomógomb eseménykezelőjét, hogyan várakozik. Mivel ez a UI threaden fut, amíg le nem fut, a felhasználói felület nem tud reagálni eseményekre. Például a nyomógomb színe nem változik, ha ráhúzom vagy lehúzom róla az egeret. Ez alapvetően egy nagyon rossz dolog, ha egy programban így van.
 
 ## 1. feladat: az alkalmazás kipróbálása

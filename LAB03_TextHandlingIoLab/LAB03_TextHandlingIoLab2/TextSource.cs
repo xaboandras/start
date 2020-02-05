@@ -16,9 +16,5 @@ mint ahogy az 1980-05-35 és a 128-05-123 is.";
         public static string ShortTextForPlusCodes => @"Itt Plus Code-ok szerepelnek, mint a 8FVXF3F5+6X, a 8FRVWV5J+JH, a 7Q622X5W+PF,
 a 8FVXF3H5+GPX, 8FVXG28V+2C, 7J3XWRJP+J8, de ha egy közeli várost adunk meg, akkor a G3M2+RJ, Budapest is és a F3F5+6X Budapest is helyes.
 Viszont az alábbiak hibásak: 8FVXF1F5+6X, 8BVXF3F5+6X, 8F0XF3FO+6X, mert érvénytelen karaktereket is tartalmaznak.";
-        public static string ShortTextWithAddresses => @"1117 Budapest, Irinyi út 42.,
-valamint 1111 Budapest, Műegyetem rkp. 3., de szerencsés lenne felismerni azt is,
-hogy 1111 Budapest, Bartók Béla út 20., viszont a Tétényi út 42. már
-kevés, meg az 1115 Budapest is.";
     }
 }

@@ -1,15 +1,10 @@
 ﻿using OpenCvSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TurkMite
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Mat img = new Mat(200, 200, MatType.CV_8UC3, new Scalar(0, 0, 0));
             var indexer = img.GetGenericIndexer<Vec3b>();
