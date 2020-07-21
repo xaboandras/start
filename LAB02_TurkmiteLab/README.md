@@ -11,10 +11,7 @@ Ezzel az a célunk, hogy ne lehessen véglegesen megakadni a feladat megoldásá
 
 - Felkészülésként előre olvasd el az egész fenti snippetet! Kövesd végig a módosításokat, figyeld meg, mi miért lett olyan, amilyen.
 - Nézd meg a laborra felkészülést támogató videókat:
-  - Kiindulási program működése, első körös szépítgetés: https://youtu.be/xZ0gRsLK2Lw
-  - A turkmite kiszervezése külön osztályba: https://youtu.be/tx8ofAxsfEU
-  - A turkmite funkciók kiszervezése külön metódusba: https://youtu.be/RWIDCRuOOjc
-  - Unit teszt készítése: https://youtu.be/JedBGqNbbxc
+  - (Lásd Moodle)
   - Gondosan olvasd végig a [snippetet](http://bmeaut.github.io/snippets/snippets/0220_TurkmiteRefactorEsTeszt/) is, mert szerepelnek benne olyan trükkök, ami a videóban nem kerül sorra.
 
 - Próbáld ki Visual Studio alatt, hogyan lehet egy .NET Core xUnit teszt projektet létrehozni.

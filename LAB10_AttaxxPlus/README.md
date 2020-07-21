@@ -6,12 +6,7 @@ A feladatok során legalább minden részfeladat elkészítése után commitolj!
 
 ## Felkészülés a laborra
 
-A labor során egy viszonylag összetett alkalmazásban kell mozogni és módosításokat végrehajtani. Ehhez fontos, hogy az alapvető felépítéssel és működéssel már tisztában légy! Ha még nem tetted meg, nézd meg az alábbi videókat:
-
-- A játék lényege: https://youtu.be/iwJ23hEWKNI
-- A felhasználói felület és az MVVM architektúra működése: https://youtu.be/o-9cEdj9WIc
-- Az adatmodell: https://youtu.be/18DEiUrwttw
-- A View és ViewModel: https://youtu.be/Znf3bAsg54A
+A labor során egy viszonylag összetett alkalmazásban kell mozogni és módosításokat végrehajtani. Ehhez fontos, hogy az alapvető felépítéssel és működéssel már tisztában légy! Ha még nem tetted meg, nézd meg a Moodle alatti videókat.
 
 ## 1. feladat: a kijelölt mező keretszíne
 

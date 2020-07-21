@@ -1,12 +1,6 @@
 # Mandelbrot Laboratórium
 
-A laborra való felkészülést a következő videók segítik:
-
-- Az alkalmazás használata és a solution felépítése: https://youtu.be/vGd07qFaqbs 
-- Az MVVM architektúra és a részletes működés: https://youtu.be/K3V2znwKDUE
-- A kép renderelésének működése: https://youtu.be/sqX4uvxGRhM
-
-(A videókon a mintamegoldás forráskódján keresztül mutatom ba a működést, a labor végére ehhez hasonló eredményt kell kapni.)
+A laborra való felkészülést Moodle alatti videók segítik. (A videókon a mintamegoldás forráskódján keresztül mutatom ba a működést, a labor végére ehhez hasonló eredményt kell kapni.)
 
 # A konkrét labor feladatok
 

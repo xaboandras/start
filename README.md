@@ -10,5 +10,4 @@ Az egyértelmű azonosíthatóság érdekében kérünk, add meg az alábbiakat:
 
 # Hasznos linkek 
 
-- [Youtube csatorna](https://www.youtube.com/playlist?list=PLb8EWPCoqCDYUeE-MoAb_VJvKO6dRXkow)
 - [Az eredeti kiindulási repository: https://github.com/eviplabs/start/](https://github.com/eviplabs/start/)

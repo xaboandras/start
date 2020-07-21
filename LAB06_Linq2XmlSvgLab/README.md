@@ -2,7 +2,7 @@
 
 Az előzetes felkészüléshez az alábbi anyagokat tekintsd át:
 
-- Linq2XmlSvgLab videó: https://www.youtube.com/watch?v=-AZgUGNT2Nw
+- Videó a Moodle alatt.
 - Linq dokumentáció: https://docs.microsoft.com/en-us/dotnet/csharp/linq/
 - A code review labor feladathoz: .NET C# coding guides (MS), lásd a leírásban.
 

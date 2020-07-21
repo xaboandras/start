@@ -8,27 +8,19 @@ http://bmeaut.github.io/snippets/snippets/0139_GitGyakorlat/
 ## Felkészülés a mérésre
 
 Ehhez a laborhoz nagyon részletes videó útmutató tartozik, melyeket kérünk, hogy előre nézz meg!
-
-Útmutató videók:
-- EVIP LAB01 1/6 Classroom: https://youtu.be/kXwXXxgUYhc
-- EVIP LAB01 2/6 Működés: https://youtu.be/sP6JYJ0dguA
-- EVIP LAB01 3/6 Debug: https://youtu.be/-6Ip9V2bbCA
-- EVIP LAB01 4/6 Tesztek: https://youtu.be/APUO2tV_rmY
-- EVIP LAB01 5/6 CountPrimeNumbers: https://youtu.be/k-mBhmJldqc
-- EVIP LAB01 6/6 PullRequest: https://youtu.be/Wsc85SdNEYA
+(Lásd Moodle)
 
 ## 1. feladat: classroom.github.com
 
 Hozd létre a saját repositorydat, amit a félév során fogsz használni!
-GitHub classroom invitation URL a tárgy tanszéki honlapján, bejelentkezés után: https://www.aut.bme.hu/Course/VIAUBB01 (Publikus helyre sajnos nem kerülhet ki.)
-
-A repository elnevezését mi generáljuk a kurzusodból és a nevedből. Kérlek figyelj rá, hogy jót válassz ki! Pl. L1_MintaMokus.
+GitHub classroom invitation URL a Moodleben szerepel.
 
 ## 2. feladat: git clone, labor megoldás elkezdése
 
 - Klónozd a repositorydat a laborgépre a Visual Studio alatt.
 - Hozz létre a master branch mellé egyet, amire a mostani laboron fogsz dolgozni LAB01 néven. A labor végén a pull requestben ennek az eltérését fogod majd beadni a master branchhez képest.
 - Nyisd meg a kiadott keretprogramot.
+- A továbbiakban mindig a saját repositoryda dolgozz! Még akkor is, ha a start nevű repositoryban nézed esetleg a leírást. Abba nem fogsz tudni push-olni.
 
 ## 3. feladat: kész kód áttekintése, debug feladat
 

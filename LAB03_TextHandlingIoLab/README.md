@@ -10,8 +10,7 @@ A reguláris kifejezés egy olyan, bizonyos szintaktikai szabályok szerint leí
 
 A felkészülés során az alábbi anyagokat tekintsd át:
 
-- Videó a reguláris kifejezésekről konkrét példával: https://youtu.be/z3NiHbYejKM
-- Videó a regex keresztrejtvényekről: https://youtu.be/VTb6uUmrLxU
+- Videók a Moodleben.
 - [Reguláris kifejezések C# segítségével](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.2)
 - Tekintsd át a kiinduló forráskódot. A unit tesztekben szerepelnek kommentárok és tippek, valamint ezek ellenőrizik a megoldásaid helyes működését. A megoldások mind a Solutions.cs fájlba kerülnek majd.
 

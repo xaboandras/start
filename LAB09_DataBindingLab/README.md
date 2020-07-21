@@ -2,8 +2,7 @@
 
 Felkészülési anyagok:
 
-- A mérés előtt nézd meg a bevezető videót: https://youtu.be/vVvg6ZYT6FE
-- Az UwpBindingAndCommandDemo példaprogram működéséről még egy videó: https://youtu.be/00S42vT9ElY
+- A mérés előtt nézd meg a Moodle alatti bevezető videókat.
 - A labor során szóba kerül a view model. Ez a később tanult MVVM architektúra egyik eleme. Lényege, hogy az adatmodellhez (például emberek egy listája) van egy view model is, ami a propertyjeinek az értékét a modelből veszi, de olyan formában, ahogy azt a nézet (view) közvetlenül meg tudja jeleníteni. Például ha a modelben van keresztnév és vezetéknév, a felhasználó felületen viszont egyben, névként jelenik majd meg, akkor a view modelnek lesz egy Name nevű propertyje, amit ha lekérdezek, a getterje a modelből elkéri a vezeték- és keresztnevet és összefűzve visszaadja őket. Így a nézet és a view model között könnyen lehet adatkötés, mivel a megjelenítendő adatok összeválogatását a view model megoldja, a view és view model közötti adatkötés a legtöbb esetben már csak átmásolgat értékeket.
 
 # DataBindingLab mérési feladatok
@@ -16,7 +15,7 @@ A feladatokat a NewTransaction és SummaryList user contolokban kell elkészíte
 
 ## Új tranzakció (NewTransaction) felvételének implementálása
 
-A keretprogram már tartalmazza a felhasználói felület azon részét, mely új tranzakciókat hoz létre. Ami hiányzik, az a nyomógomb eseménykezelője. Ebben az alábbi adatkötéseket már ki lehet használni:
+A keretprogram már tartalmazza a felhasználói felület azon részét, mely új tranzakciókat hoz létre. Ami hiányzik, az az adatkötés és a nyomógomb eseménykezelője.
 
 - A ListBox feladata, hogy a code behindban (NewTransaction.xaml.cs) található Categories lista tartalmát megjelenítse (ItemsSource propertyhez adatkötés), és az aktuálisan kiválasztott elem sorszámát (SelectedIndex property) a NewTransaction.SelectedCategoryIndex propertybe is írja be. Ez utóbbihoz kétirányú adatkötés kell, mivel a UI nem csak megjelenít, hanem vissza is ír adatokat.
 - Ezen kívül a Description és Value feliratok utáni TextBox-ok is a NewTransaction megfelelő propertyjeibe írják be a felhasználó által megadott értékeket.
@@ -47,7 +46,7 @@ Most szépítsük ki egy kicsit a tranzakciók listáját.
 Nézd meg a konverter forráskódját! A kapott bool értéktől függően két, saját magán belül tárolt SolidColorBrush közül az egyiket adja mindig vissza.
 Ellenőrizd a felhasználói felületen, hogy pozitív és negatív "Value" érték mellett a tranzakciók tényleg zölden vagy pirosan jelennek meg!
 
-- Végül vegyél fel a StackPanelbe egy Image típusú vezérlőt is. Ennek forrása (Source) a "/ViewModel/Luxury.png" legyen. Azt szeretnénk, hogy a SummaryListItemViewModel.IsLuxury propertytől függjön, hogy látható-e, vagyis az Image.Visibility ehhez legyen hozzákötve. Mivel a Visibility nem bool típusú, hanem "Windows.UI.Xaml.Visibility" (nézd meg a dokumentációban, hogy mik a lehetséges értékei), ezért készíts az IsExpense2ColorConverter-hez hasonló IsLuxury2VisibilityConverter osztályt, ami a kapott bool értéktől függően Windows.UI.Xaml.Visibility.Visible vagy Collapsed értékeket ad vissza! Ugyanúgy regisztráld be statikus erőforrásként és használt az x:Bind konvertereként.
+- Végül vegyél fel a StackPanelbe egy Image típusú vezérlőt is. Ennek forrása (Source) a "/ViewModel/Luxury.png" legyen. Azt szeretnénk, hogy a SummaryListItemViewModel.IsLuxury propertytől függjön, hogy látható-e, vagyis az Image.Visibility ehhez legyen hozzákötve. Mivel a Visibility nem bool típusú, hanem "Windows.UI.Xaml.Visibility" (nézd meg a dokumentációba, hogy mik a lehetséges értékei), ezért készíts az IsExpense2ColorConverter-hez hasonló Bool2VisibilityConverter osztályt, ami a kapott bool értéktől függően Windows.UI.Xaml.Visibility.Visible vagy Collapsed értékeket ad vissza! Ugyanúgy regisztráld be statikus erőforrásként és használt az x:Bind konvertereként.
 
 ## Value és Description mezők nullázza
 

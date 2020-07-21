@@ -9,7 +9,7 @@ Mivel az időigényes műveletek nem futhatnak a felhasználói felület szálj�
 
 Az otthoni felkészülés az alábbi lépésekből áll:
 
-- Videó a többszálú programozásról: https://youtu.be/TDxzCFcolUk
+- Videó a Moodle alatt.
 - Olvasd el ezt a mérési útmutatót, hogy ne a laboron lásd először.
 - Olvasd el az alábbi leírást az async-await mintáról:
 https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/

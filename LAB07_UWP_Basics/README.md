@@ -2,6 +2,7 @@
 
 ## Felkészülés a laborra
 
+- Lásd Moodle
 - XAML használata felhasználói felülethez:
     - https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/
 - UWP App készítési alapok:
@@ -87,7 +88,7 @@ Egy felhasználói felület működése során egér- és billentyűzet-esemény
 LAB07_UWP_Basics\\01 mappában, a most elkészített projekben dolgozzatok. Minden létrehozott gomb egységes méretű legyen, legyen neve, és tartalmazzon szöveget. Az elemek egymás alatt helyezkedjenek el.
 
 - Hozz létre egy gombot amire ráklikkelve megváltozik a szöveg színe és a gomb háttérszíne.
-- Hozz létre egy gombot amire ráklikkelve az ablak háttérszíne két szín között váltogat (minden kattintásra egyszer változik a szín, nem automatikus villogás a feladat).
+- Hozz létre egy gombot amire ráklikkelve az ablak háttérszíne két szín között váltogat (minden kattintásra egy váltás).
 - Hozz létre két szövegdobozt (TextBox), egy címkét (TextBlock), és két gombot:
     - Ezek az elemek egy sorban helyezkedjenek el.
     - Az első gomb megnyomására a két szövegdobozba beírt számok összegét írja ki a címkébe (itt fontos a hibakezelés).
