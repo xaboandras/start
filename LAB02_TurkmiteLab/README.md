@@ -38,7 +38,7 @@ A további feladat egy 3 színű, és egy tetszőleges, valamivel összetettebb 
 
 (Commitold be az eddigi eredményeket!)
 
-Ha még maradt időd, kiegészítő feladatként készíts egy általad kitalált turkmite-et! Ha tetszik a generált kép, küldd be a tantárgyi Slack random csatornájába és értékelt emojikkal a többiek munkáját! :) (Slack alatt az üzenetre húzva az egeret a jobb oldalon van az "Add reaction" menüpont.)
+Ha még maradt időd, kiegészítő feladatként készíts egy általad kitalált turkmite-et! Ha tetszik a generált kép, küldd be a tantárgyi Teamsbe és lájkold a többiek munkáját! :)
 
 ## A labor befejezése
 
