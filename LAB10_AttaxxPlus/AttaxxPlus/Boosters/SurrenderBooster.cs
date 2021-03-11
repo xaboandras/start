@@ -1,5 +1,5 @@
-﻿using System;
-using AttaxxPlus.Model;
+﻿using AttaxxPlus.Model;
+using System;
 
 namespace AttaxxPlus.Boosters
 {
@@ -11,13 +11,24 @@ namespace AttaxxPlus.Boosters
         // EVIP: compact override of getter for Title returning constant.
         public override string Title => "Surrender";
 
-        public SurrenderBooster() : base()
-        {
-        }
+        public SurrenderBooster() : base() { }
+
+        public override void InitializeGame() => LoadImage(new Uri("ms-appx:///Boosters/SurrenderBooster.png"));
 
         public override bool TryExecute(Field selectedField, Field currentField)
         {
-            return false;
+            int winnerPlayer;
+
+            if (GameViewModel.CurrentPlayer == 1)
+                winnerPlayer = 2;
+            else
+                winnerPlayer = 1;
+
+            foreach (var field in GameViewModel.Model.Fields)
+                field.Owner = winnerPlayer;
+            
+            GameViewModel.EndOfTurn();
+            return true;
         }
     }
 }
