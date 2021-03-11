@@ -1,5 +1,5 @@
-﻿using System;
-using AttaxxPlus.Model;
+﻿using AttaxxPlus.Model;
+using System;
 
 namespace AttaxxPlus.Boosters
 {
@@ -10,10 +10,19 @@ namespace AttaxxPlus.Boosters
     public class DummyBooster : BoosterBase
     {
         // How many times can the user activate this booster
-        private int usableCounter = 2;
+        private int usableCounterPlayer1 = 2;
+        private int usableCounterPlayer2 = 2;
 
         // EVIP: overriding abstract property in base class.
-        public override string Title { get => $"Dummy ({usableCounter})"; }
+        public override string Title 
+        { 
+            get
+            {
+                if (GameViewModel.CurrentPlayer == 1)
+                    return $"Dummy ({usableCounterPlayer1})";
+                return $"Dummy ({usableCounterPlayer2})";
+            } 
+        }
 
         public DummyBooster()
             : base()
@@ -33,15 +42,22 @@ namespace AttaxxPlus.Boosters
 
         public override void InitializeGame()
         {
-            usableCounter = 2;
+            usableCounterPlayer1 = 2;
+            usableCounterPlayer2 = 2;
         }
 
         public override bool TryExecute(Field selectedField, Field currentField)
         {
-            // Note: if you need a player-dependent counter, use this.GameViewModel.CurrentPlayer.
-            if (usableCounter > 0)
+        //Note: if you need a player - dependent counter, use this.GameViewModel.CurrentPlayer.
+            if (GameViewModel.CurrentPlayer == 1 && usableCounterPlayer1 > 0)
             {
-                usableCounter--;
+                usableCounterPlayer1--;
+                Notify(nameof(Title));
+                return true;
+            }
+            else if (GameViewModel.CurrentPlayer == 2 && usableCounterPlayer2 > 0)
+            {
+                usableCounterPlayer2--;
                 Notify(nameof(Title));
                 return true;
             }
