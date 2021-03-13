@@ -4,9 +4,9 @@ Erről a repositoryról készülnek a hallgatói személyes másolatok a classro
 A repository private, a tárgy oktatóin kívül más nem láthatja.
 Az egyértelmű azonosíthatóság érdekében kérünk, add meg az alábbiakat:
 
-## NÉV: 
-## Neptun-kód: 
-## Kurzus: 
+## NÉV: Kisteleki Gergely és K. Szbó András
+## Neptun-kód: DHE9EJ és PH5AAU
+## Kurzus: CDE8
 
 # Hasznos linkek 
 
